@@ -4,9 +4,9 @@
 
 A wrapper around grep to avoid typing common patterns.
 
-- [gf redirect] (#gf redirect)
+* '#gf redirect`
 
-``` 
+```golang
 {
     "flags": "-iE",
      "patterns": [
