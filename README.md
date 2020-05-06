@@ -1,12 +1,12 @@
 # Gf-Patterns
 
-## Gf by [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) https://github.com/tomnomnom/gf
+## Gf by [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) [GitHub-Link](https://github.com/tomnomnom/gf)
 
 A wrapper around grep to avoid typing common patterns.
 
- **gf redirect**
+**gf redirect**
 
-```json
+```bash
 {
     "flags": "-iE",
      "patterns": [
