@@ -4,7 +4,7 @@
 
 A wrapper around grep to avoid typing common patterns.
 
-* #gf redirect
+ **gf redirect**
 
 ```json
 {
