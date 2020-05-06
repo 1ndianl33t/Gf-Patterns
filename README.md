@@ -1,5 +1,9 @@
 # Gf-Patterns
 
+##Gf by @TomNomNom https://github.com/tomnomnom/gf
+
+A wrapper around grep to avoid typing common patterns.
+
 ```
 
 ``` 
