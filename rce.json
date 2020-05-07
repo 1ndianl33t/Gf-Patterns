@@ -1,0 +1,15 @@
+{
+    "flags": "-iE",
+     "patterns": [
+ 
+        "daemon",
+        "upload",
+        "dir",
+        "execute",
+        "download",
+        "log",
+        "ip",
+        "cli",
+        "cmd"
+]
+}
