@@ -42,9 +42,9 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 ```
 **Use example**
 ```
-▶ cat waybackdata | gf ssrf
+▶ cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssfrparams.txt
 
-▶ cat waybackdata | gf redirect
+▶ cat waybackdata | gf redirect | tee -a redirect.txt
 ```
 ### Pattern Files
 
@@ -160,9 +160,182 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 }
 
 ```
+***gf rce***
+```bash
+▶ cat ~/.gf/rce.json
+{
+    "flags": "-iE",
+     "patterns": [
+ 
+        "daemon",
+        "upload",
+        "dir",
+        "execute",
+        "download",
+        "log",
+        "ip",
+        "cli",
+        "cmd"
+]
+}
+```
+***Gf idor***
+
+```bash
+▶ cat ~/.gf/idor.json
+{
+    "flags": "-iE",
+     "patterns": [
+
+ "id",
+ "user",
+ "account",
+ "number",
+ "order",
+ "no",
+ "doc",
+ "key",
+ "email",
+ "group",
+ "profile",
+ "edit",
+ "report"
+ 
+ ]
+}
+
+```
+
+
+
+
+
+
+***Gf Sqli***
+```bash
+▶ cat ~/.gf/sqli.json
+{
+    "flags": "-iE",
+     "patterns": [
+
+         "id",
+        "select",
+        "report",
+        "role",
+        "update",
+        "query",
+        "user",
+        "name",
+        "sort",
+        "where",
+        "search",
+        "params",
+        "process",
+        "row",
+        "view",
+        "table",
+        "from",
+        "sel",
+        "results",
+        "sleep",
+        "fetch",
+        "order",
+        "keyword",
+        "column",
+        "field",
+        "delete",
+        "string",
+        "number",
+        "filter"
+]
+}
+```
+***Gf LFI***
+```bash
+▶ cat ~/.gf/lfi.json
+{
+    "flags": "-iE",
+     "patterns": [
+
+        "file",
+        "document",
+        "folder",
+        "root",
+        "path",
+        "pg",
+        "style",
+        "pdf",
+        "template",
+        "php_path",
+        "doc"
+]
+}
+```
+
+***Gf ssti***
+```bash
+▶ cat ~/.gf/ssti.json
+
+
+{
+    "flags": "-iE",
+     "patterns": [
+        
+        "template",
+        "preview",
+        "id",
+        "view",
+        "activity",
+        "name",
+        "content",
+        "redirect"
+]
+}
+```
+
+***Gf debug_logic***
+```bash
+▶ cat ~/.gf/debug_logic.json
+{
+    "flags": "-iE",
+     "patterns": [
+
+        "access",
+        "admin",
+        "dbg",
+        "debug",
+        "edit",
+        "grant",
+        "test",
+        "alter",
+        "clone",
+        "create",
+        "delete",
+        "disable",
+        "enable",
+        "exec",
+        "execute",
+        "load",
+        "make",
+        "modify",
+        "rename",
+        "reset",
+        "shell",
+        "toggle",
+        "adm",
+        "root",
+        "cfg",
+        "config"
+]
+}
+```
+
+
+
 # Credit
 
 [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom)
+[Bugcrowd HUNT](https://github.com/bugcrowd/HUNT)
 
 # Contact
 [![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
