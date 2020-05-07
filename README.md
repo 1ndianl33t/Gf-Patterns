@@ -5,14 +5,99 @@
 A wrapper around grep, to help you grep for things 
 
 # installation
+
+If you've got Go installed and configured you can install `waybackurls & Gf` with:
+
+```bash 
+
+▶ go get -u https://github.com/tomnomnom/waybackurls
+```
+```
+▶ go get -u https://github.com/tomnomnom/gf
+```
+
+If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
+
+```
+▶ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+```
+
+Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
+take effect.
+
+To get started quickly, you can copy the example pattern files to `~/.gf` like this:
+
+```
+▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
+▶ 
+▶ 
+▶ 
+
+**gf ssrf**
+
 ```bash
 
-▶ gp get -u https://github.com/tomnomnom/gf
-▶ 
-▶ 
-▶ 
-▶ 
-▶ 
+{
+    "flags": "-iE",
+     "patterns": [
+
+        "access",
+        "admin",
+        "dbg",
+        "debug",
+        "edit",
+        "grant",
+        "test",
+        "alter",
+        "clone",
+        "create",
+        "delete",
+        "disable",
+        "enable",
+        "exec",
+        "execute",
+        "load",
+        "make",
+        "modify",
+        "rename",
+        "reset",
+        "shell",
+        "toggle",
+        "adm",
+        "root",
+        "cfg",
+        "dest",
+        "redirect",
+        "uri",
+        "path",
+        "continue",
+        "url",
+        "window",
+        "next",
+        "data",
+        "reference",
+        "site",
+        "html",
+        "val",
+        "validate",
+        "domain",
+        "callback",
+        "return",
+        "page",
+        "feed",
+        "host",
+        "port",
+        "to",
+        "out",
+        "view",
+        "dir",
+        "show",
+        "navigation",
+        "open"
+        
+      ]
+}
+
 ```
 
 **gf redirect**
