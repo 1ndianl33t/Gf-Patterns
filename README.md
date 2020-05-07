@@ -29,13 +29,31 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 
 ```
 ▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
-▶ 
-▶ 
-▶ 
+```
+**MY Gf Patterns installation**
+```
+▶ git clone https://github.com/1ndianl33t/Gf-Patterns
+```
+
+To get started quickly, you can copy the example pattern files to `~/.gf` like this:
+
+```
+▶ mv ~/Gf-Patterns/*.json ~/.gf
+```
+**Use example**
+```
+▶ cat waybackdata | gf ssrf
+
+▶ cat waybackdata | gf redirect
+```
+### Pattern Files
+
+The pattern definitions are stored in `~/.gf` as little JSON files that can be kept under version control:
 
 **gf ssrf**
 
 ```bash
+▶ cat ~/.gf/ssrf.json
 
 {
     "flags": "-iE",
@@ -103,6 +121,8 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 **gf redirect**
 
 ```bash
+▶ cat ~/.gf/redirect
+
 {
     "flags": "-iE",
      "patterns": [
@@ -140,27 +160,6 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 }
 
 ```
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```
-```
-
-```
-```
-
-```
-```
-```
-
 # Credit
 
 [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom)
