@@ -6,6 +6,8 @@ A wrapper around grep, to help you grep for things
 
 # installation
 
+[Go Path Setup](https://github.com/golang/go/wiki/SettingGOPATH)
+
 If you've got Go installed and configured you can install `waybackurls & Gf` with:
 
 ```bash 
