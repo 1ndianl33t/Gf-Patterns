@@ -338,6 +338,8 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 
 [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom)
 [Bugcrowd HUNT](https://github.com/bugcrowd/HUNT)
+[![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
+
 
 # Contact
 [![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
