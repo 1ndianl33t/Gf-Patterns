@@ -1,4 +1,4 @@
-# Gf-Patterns V 1.0
+# Gf-Patterns V 1.1
 
 ## [GF](https://github.com/tomnomnom/gf) By [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) 
 
@@ -340,6 +340,8 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 [Bugcrowd HUNT](https://github.com/bugcrowd/HUNT)
 [![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
 
+# Contributers
+@victoni `added more redirect parameters`
 
 # Contact
 [![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
