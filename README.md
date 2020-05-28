@@ -1,4 +1,4 @@
-# Gf-Patterns V 1.1
+# Gf-Patterns V 1.2
 
 ## [GF](https://github.com/tomnomnom/gf) By [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) 
 
