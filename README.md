@@ -1,4 +1,4 @@
-# Gf-Patterns V 1.2
+# Gf-Patterns V 1.9
 
 ## [GF](https://github.com/tomnomnom/gf) By [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) 
 
@@ -28,7 +28,9 @@ Note that you'll have to restart your terminal, or run `source ~/.bashrc` for th
 take effect.
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
-
+```bash
+▶ mkdir .gf
+```
 ```bash
 ▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 ```
@@ -38,12 +40,15 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 ```
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
-
+```bash
+▶ mkdir .gf
+```
 ```bash
 ▶ mv ~/Gf-Patterns/*.json ~/.gf
 ```
 **Use example**
 ```bash
+
 ▶ cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssfrparams.txt
 
 ▶ cat waybackdata | gf redirect | tee -a redirect.txt
