@@ -3,13 +3,13 @@
 "flags": "-iE",
 "patterns": [
 
-"template",
-"preview",
-"id",
-"view",
-"activity",
-"name",
-"content",
-"redirect"
+"template=",
+"preview=",
+"id=",
+"view=",
+"activity=",
+"name=",
+"content=",
+"redirect="
 ]
 }
