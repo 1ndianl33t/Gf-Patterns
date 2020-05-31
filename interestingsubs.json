@@ -1,0 +1,15 @@
+{
+    "flags": "-iE",
+     "patterns": [
+"admin",
+"jenkins",
+"stage",
+"test",
+*dev",
+"devops",
+"staff",
+"db",
+"qa",
+"internal"
+]
+}
