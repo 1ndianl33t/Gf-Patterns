@@ -3,9 +3,11 @@
      "patterns": [
 "admin",
 "jenkins",
+"test",
+"proxy",
 "stage",
 "test",
-*dev",
+"dev",
 "devops",
 "staff",
 "db",
