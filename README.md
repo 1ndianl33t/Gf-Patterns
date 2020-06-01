@@ -347,5 +347,8 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 
 # Contributers
 @victoni `added more redirect parameters`
+
 @s0meguy1 `redirect & ssrf pattern Added additional filters`
+
+# Contact
 [![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
