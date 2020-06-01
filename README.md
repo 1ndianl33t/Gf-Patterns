@@ -337,6 +337,14 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 }
 ```
 
+### Donations
+You can encourage me to contribute more to the open source with donations.
+
+- Paypal - [https://www.paypal.me/1ndianl33t](https://www.paypal.me/1ndianl33t)
+
+-GooglePay,Paytm-
+
+`8085778875`
 
 
 # Credit
