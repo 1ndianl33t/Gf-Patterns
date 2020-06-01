@@ -342,7 +342,7 @@ You can encourage me to contribute more to the open source with donations.
 
 - Paypal - [https://www.paypal.me/1ndianl33t](https://www.paypal.me/1ndianl33t)
 
--GooglePay,Paytm-
+- GooglePay,Paytm -
 
 `8085778875`
 
