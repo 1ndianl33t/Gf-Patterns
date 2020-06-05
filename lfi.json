@@ -12,6 +12,10 @@
         "pdf=",
         "template=",
         "php_path=",
-        "doc="
+        "doc=",
+        "page=",
+        "name="
+         
+
 ]
 }
