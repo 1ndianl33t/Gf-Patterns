@@ -14,7 +14,26 @@
         "php_path=",
         "doc=",
         "page=",
-        "name="
+        "name=",
+        "cat=",
+        "dir=",
+        "action=",
+        "board=",
+        "date=",
+        "detail=",
+        "download=",
+        "prefix=",
+        "include=",
+        "inc=",
+        "locate=",
+        "show=",
+        "site=",
+        "type=",
+        "view=",
+        "content=",
+        "layout=",
+        "mod=",
+        "conf="
          
 
 ]
