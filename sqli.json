@@ -30,6 +30,26 @@
         "delete=",
         "string=",
         "number=",
-        "filter="
+        "filter=",
+        "page=",
+        "dir=",
+        "category=",
+        "file=",
+        "class=",
+        "url=",
+        "news=",
+        "item=",
+        "menu=",
+        "lang=",
+        "ref=",
+        "title=",
+        "topic=",
+        "thread=",
+        "type=",
+        "date=",
+        "form=",
+        "main=",
+        "nav=",
+        "region="
 ]
 }
