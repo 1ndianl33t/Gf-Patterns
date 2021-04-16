@@ -1,5 +1,5 @@
 {
-    "flags": "-iE",
+    "flags": "-HnriE",
      "patterns": [
 
         "access=",
