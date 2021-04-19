@@ -1,8 +1,8 @@
 {
     "flags": "-iE",
      "patterns": [
-"Lmage_url=",
-"Open=",
+"image_url=",
+"open=",
 "callback=",
 "cgi-bin/redirect.cgi",
 "cgi-bin/redirect.cgi?",
@@ -63,6 +63,24 @@
 "val=",
 "validate=",
 "view=",
-"window="
+"window=",
+"jump=",
+"backto=",
+"back=",
+"src=",
+"source=",
+"backurl=",
+"dashboard=",
+"location=",
+"desturl=",
+"callback_url=",
+"callbackurl=",
+"src_url=",
+"ext=",
+"move=",
+"forward_url=",
+"from=",
+"ref=",
+"ret=",
 ]
 }
