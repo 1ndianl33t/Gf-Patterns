@@ -12,16 +12,16 @@ If you've got Go installed and configured you can install `waybackurls & Gf` wit
 
 ```bash 
 
-▶ go get -u github.com/tomnomnom/waybackurls
+go get -u github.com/tomnomnom/waybackurls
 ```
 ```bash
-▶ go get -u github.com/tomnomnom/gf
+go get -u github.com/tomnomnom/gf
 ```
 
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
 
 ```bash
-▶ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 ```
 
 Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
@@ -29,29 +29,27 @@ take effect.
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
-▶ mkdir .gf
+mkdir .gf
 ```
 ```bash
-▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
+cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 ```
 **MY Gf Patterns installation**
 ```bash
-▶ git clone https://github.com/1ndianl33t/Gf-Patterns
+git clone https://github.com/1ndianl33t/Gf-Patterns
 ```
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
-▶ mkdir .gf
+mkdir .gf
 ```
 ```bash
-▶ mv ~/Gf-Patterns/*.json ~/.gf
+mv ~/Gf-Patterns/*.json ~/.gf
 ```
 **Use example**
 ```bash
-
-▶ cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssfrparams.txt
-
-▶ cat waybackdata | gf redirect | tee -a redirect.txt
+cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssfrparams.txt
+cat waybackdata | gf redirect | tee -a redirect.txt
 ```
 ### Pattern Files
 
@@ -60,7 +58,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 **gf ssrf**
 
 ```bash
-▶ cat ~/.gf/ssrf.json
+cat ~/.gf/ssrf.json
 
 {
     "flags": "-iE",
@@ -128,7 +126,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 **gf redirect**
 
 ```bash
-▶ cat ~/.gf/redirect
+cat ~/.gf/redirect
 
 {
     "flags": "-iE",
@@ -169,7 +167,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 ```
 ***gf rce***
 ```bash
-▶ cat ~/.gf/rce.json
+cat ~/.gf/rce.json
 {
     "flags": "-iE",
      "patterns": [
@@ -189,7 +187,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 ***Gf idor***
 
 ```bash
-▶ cat ~/.gf/idor.json
+cat ~/.gf/idor.json
 {
     "flags": "-iE",
      "patterns": [
@@ -220,7 +218,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 
 ***Gf Sqli***
 ```bash
-▶ cat ~/.gf/sqli.json
+cat ~/.gf/sqli.json
 {
     "flags": "-iE",
      "patterns": [
@@ -259,7 +257,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 ```
 ***Gf LFI***
 ```bash
-▶ cat ~/.gf/lfi.json
+cat ~/.gf/lfi.json
 {
     "flags": "-iE",
      "patterns": [
@@ -281,7 +279,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 
 ***Gf ssti***
 ```bash
-▶ cat ~/.gf/ssti.json
+cat ~/.gf/ssti.json
 
 
 {
@@ -302,7 +300,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 
 ***Gf debug_logic***
 ```bash
-▶ cat ~/.gf/debug_logic.json
+cat ~/.gf/debug_logic.json
 {
     "flags": "-iE",
      "patterns": [
