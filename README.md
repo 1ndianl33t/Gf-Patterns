@@ -1,4 +1,4 @@
-# Gf-Patterns V 1.9
+# Gf-Patterns V 2.0
 
 ## [GF](https://github.com/tomnomnom/gf) By [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) 
 
@@ -12,10 +12,10 @@ If you've got Go installed and configured you can install `waybackurls & Gf` wit
 
 ```bash 
 
-▶ go get -u github.com/tomnomnom/waybackurls
+▶ go install github.com/tomnomnom/waybackurls@latest
 ```
 ```bash
-▶ go get -u github.com/tomnomnom/gf
+▶ go install github.com/tomnomnom/gf@latest
 ```
 
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
