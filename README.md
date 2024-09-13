@@ -11,47 +11,59 @@ A wrapper around grep, to help you grep for things
 If you've got Go installed and configured you can install `waybackurls & Gf` with:
 
 ```bash 
-
-▶ go get -u github.com/tomnomnom/waybackurls
+go install github.com/tomnomnom/waybackurls@latest
 ```
+Now download the gf tool for go lang 17 (that is go1.17) and may be above
 ```bash
-▶ go get -u github.com/tomnomnom/gf
+go install github.com/tomnomnom/gf@latest
 ```
+Or download the gf tool for go lang 16 (that is go1.16) and below
+```bash
+go get -u github.com/tomnomnom/gf
+```
+If you've installed using `go install`, you can enable auto-completion to your `.bashrc` like this:
 
+```bash
+ echo 'source $GOPATH/pkg/mod/github.com/tomnomnom/gf@v0.0.0-20200618134122-dcd4c361f9f5/gf-completion.bash' >> ~/.bashrc
+```
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
 
 ```bash
-▶ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 ```
-
 Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
 take effect.
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
-▶ mkdir .gf
+ mkdir .gf
 ```
+If you've installed using `go install`, you can copy the example pattern files to `~/.gf` like this:
 ```bash
-▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
+ cp -r $GOPATH/pkg/mod/github.com/tomnomnom/gf@v0.0.0-20200618134122-dcd4c361f9f5/examples ~/.gf
+```
+If you've installed using `go get`, you can copy the example pattern files to `~/.gf` like this:
+```bash
+cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 ```
 **MY Gf Patterns installation**
 ```bash
-▶ git clone https://github.com/1ndianl33t/Gf-Patterns
+ git clone https://github.com/1ndianl33t/Gf-Patterns
 ```
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
-▶ mkdir .gf
+ mkdir .gf
 ```
 ```bash
-▶ mv ~/Gf-Patterns/*.json ~/.gf
+ mv ~/Gf-Patterns/*.json ~/.gf
 ```
 **Use example**
 ```bash
 
-▶ cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssfrparams.txt
+ cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssfrparams.txt
 
-▶ cat waybackdata | gf redirect | tee -a redirect.txt
+ cat waybackdata | gf redirect | tee -a redirect.txt
 ```
 ### Pattern Files
 
