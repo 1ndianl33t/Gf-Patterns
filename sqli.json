@@ -2,7 +2,9 @@
     "flags": "-iE",
      "patterns": [
 
-         "id=",
+         "&id=",
+         "\\?id=",
+         "_id=",
         "select=",
         "report=",
         "role=",
