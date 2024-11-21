@@ -1,5 +1,5 @@
 {
-     "flags": "-iE", 
+     "flags": "-irE", 
      "patterns": [
 "q=",
 "s=",

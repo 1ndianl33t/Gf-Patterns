@@ -1,6 +1,6 @@
 
 {
-"flags": "-iE",
+"flags": "-irE",
 "patterns": [
 
 "template=",
