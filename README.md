@@ -349,6 +349,13 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 }
 ```
 
+### FAQ
+
+**Where are the X-ray tools?**
+
+This repository does not contain any X-ray (Xray) tools. It only provides the JSON pattern files listed above, which are used with [gf](https://github.com/tomnomnom/gf).
+If you are looking for the Xray web vulnerability scanner, it is a separate project maintained by Chaitin: [https://github.com/chaitin/xray](https://github.com/chaitin/xray).
+
 ### Donations
 You can encourage me to contribute more to the open source with donations.
 
