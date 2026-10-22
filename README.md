@@ -21,18 +21,33 @@ Or download the gf tool for go lang 16 (that is go1.16) and below
 ```bash
 go get -u github.com/tomnomnom/gf
 ```
-If you've installed using `go install`, you can enable auto-completion to your `.bashrc` like this:
+**Auto-completion (optional)**
+
+`$GOPATH` is often not set in your shell (Go falls back to `~/go` without exporting it), so a
+line like `source $GOPATH/src/...` ends up pointing at `/src/...` and your shell prints an error such as
+`source: no such file or directory: /src/gf-completion.zsh` every time it starts. The snippets below
+resolve the path with `go env` once, and only source the file if it actually exists.
+
+If you've installed using `go install`, bash users can enable auto-completion like this:
 
 ```bash
- echo 'source $GOPATH/pkg/mod/github.com/tomnomnom/gf@v0.0.0-20200618134122-dcd4c361f9f5/gf-completion.bash' >> ~/.bashrc
+ f=$(ls -d "$(go env GOMODCACHE)"/github.com/tomnomnom/gf@*/gf-completion.bash | tail -n 1)
+ echo "if [ -f '$f' ]; then source '$f'; fi" >> ~/.bashrc
 ```
-If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
-
+and zsh users like this:
 ```bash
- echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+ f=$(ls -d "$(go env GOMODCACHE)"/github.com/tomnomnom/gf@*/gf-completion.zsh | tail -n 1)
+ echo "if [ -f '$f' ]; then source '$f'; fi" >> ~/.zshrc
 ```
-Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
+If you've installed using `go get`, use `"$(go env GOPATH)"/src/github.com/tomnomnom/gf/gf-completion.bash`
+(or `gf-completion.zsh`) as the path instead.
+
+Note that you'll have to restart your terminal, or run `source ~/.bashrc` (or `source ~/.zshrc`) for the changes to
 take effect.
+
+**Seeing `no such file or directory: /src/gf-completion.zsh` (or `.bash`) when opening a terminal?**
+Open `~/.zshrc` (or `~/.bashrc`), delete the `source $GOPATH/...gf-completion...` line, then
+re-add it with one of the snippets above.
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
@@ -40,11 +55,11 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 ```
 If you've installed using `go install`, you can copy the example pattern files to `~/.gf` like this:
 ```bash
- cp -r $GOPATH/pkg/mod/github.com/tomnomnom/gf@v0.0.0-20200618134122-dcd4c361f9f5/examples ~/.gf
+ cp -r "$(ls -d "$(go env GOMODCACHE)"/github.com/tomnomnom/gf@* | tail -n 1)"/examples ~/.gf
 ```
 If you've installed using `go get`, you can copy the example pattern files to `~/.gf` like this:
 ```bash
-cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
+cp -r "$(go env GOPATH)"/src/github.com/tomnomnom/gf/examples ~/.gf
 ```
 **MY Gf Patterns installation**
 ```bash
