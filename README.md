@@ -65,6 +65,22 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 
  cat waybackdata | gf redirect | tee -a redirect.txt
 ```
+
+**Renamed patterns**
+
+Some patterns were renamed to shorter, lowercase, hyphenated names that are easier to type and consistent with the default gf examples (`debug-pages`, `php-errors`, ...):
+
+| Old name            | New name      |
+|---------------------|---------------|
+| `interestingEXT`    | `uniq-ext`    |
+| `interestingsubs`   | `uniq-subs`   |
+| `interestingparams` | `uniq-params` |
+| `debug_logic`       | `debug-logic` |
+
+If you copied the old files into `~/.gf` before, remove them so you don't end up with duplicate patterns:
+```bash
+ rm -f ~/.gf/interestingEXT.json ~/.gf/interestingsubs.json ~/.gf/interestingparams.json ~/.gf/debug_logic.json
+```
 ### Pattern Files
 
 The pattern definitions are stored in `~/.gf` as little JSON files that can be kept under version control:
@@ -312,9 +328,9 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 }
 ```
 
-***Gf debug_logic***
+***Gf debug-logic***
 ```bash
-▶ cat ~/.gf/debug_logic.json
+▶ cat ~/.gf/debug-logic.json
 {
     "flags": "-iE",
      "patterns": [
