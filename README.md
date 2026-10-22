@@ -21,6 +21,19 @@ Or download the gf tool for go lang 16 (that is go1.16) and below
 ```bash
 go get -u github.com/tomnomnom/gf
 ```
+Go puts the `gf` binary in `$(go env GOPATH)/bin` (usually `~/go/bin`). Make sure that directory is on your `PATH`, otherwise your shell won't find `gf`. Add it to `~/.bashrc` (or `~/.zshrc` if you use zsh):
+
+```bash
+echo 'export PATH="$PATH:$(go env GOPATH)/bin"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+**`command not found: gf`?**
+
+- Installing `waybackurls` does **not** install `gf`. They are separate tools, so run the `go install github.com/tomnomnom/gf@latest` command above too.
+- Check that the binary exists: `ls "$(go env GOPATH)/bin/gf"`. If it does, the bin directory isn't on your `PATH` yet. Add it as shown above, then open a new terminal.
+- This repo only contains pattern files (`*.json`). Copying them into `~/.gf` doesn't install the `gf` command.
+
 If you've installed using `go install`, you can enable auto-completion to your `.bashrc` like this:
 
 ```bash
@@ -36,7 +49,7 @@ take effect.
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
- mkdir .gf
+ mkdir -p ~/.gf
 ```
 If you've installed using `go install`, you can copy the example pattern files to `~/.gf` like this:
 ```bash
@@ -53,7 +66,7 @@ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 ```bash
- mkdir .gf
+ mkdir -p ~/.gf
 ```
 ```bash
  mv ~/Gf-Patterns/*.json ~/.gf
