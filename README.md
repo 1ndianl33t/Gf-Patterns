@@ -65,6 +65,13 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 
  cat waybackdata | gf redirect | tee -a redirect.txt
 ```
+
+**Note:** these patterns match against the URLs you give them, so always provide input, either through stdin or as a file argument:
+```bash
+ cat urls.txt | gf ssrf
+ gf ssrf urls.txt
+```
+Running `gf ssrf` on its own, with no piped input and no file, makes grep search the current directory without the recursive flag and fail with `grep: .: Is a directory`. That is expected: give it your URL list as shown above.
 ### Pattern Files
 
 The pattern definitions are stored in `~/.gf` as little JSON files that can be kept under version control:
