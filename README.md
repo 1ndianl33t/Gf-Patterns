@@ -65,6 +65,22 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 
  cat waybackdata | gf redirect | tee -a redirect.txt
 ```
+
+**Giving gf some input**
+
+gf needs something to search. Pipe the input in, or pass a file name as the second argument:
+```bash
+ cat urls.txt | gf xss
+
+ gf xss urls.txt
+```
+gf only takes one file argument. To search several files or a whole directory, pipe them in:
+```bash
+ cat recon-output/*.txt | gf xss
+```
+If you run a pattern with no input at all (just `gf xss` in a terminal) or give it a directory,
+grep fails with `grep: .: Is a directory`. That error means gf had nothing to read: pipe your
+URLs in or name the file to search.
 ### Pattern Files
 
 The pattern definitions are stored in `~/.gf` as little JSON files that can be kept under version control:
