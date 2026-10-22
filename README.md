@@ -58,6 +58,42 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 ```bash
  mv ~/Gf-Patterns/*.json ~/.gf
 ```
+
+**Windows installation**
+
+On Windows, `gf` looks for pattern files in the `.gf` folder inside your user profile
+(`%USERPROFILE%\.gf`, e.g. `C:\Users\<you>\.gf`). If that folder is missing or empty,
+`gf -list` prints nothing.
+
+1. Install [Go](https://go.dev/dl/) and [Git for Windows](https://git-scm.com/download/win), then install gf:
+```powershell
+ go install github.com/tomnomnom/gf@latest
+```
+   Make sure `%USERPROFILE%\go\bin` is in your `PATH` so the `gf` command is found.
+
+2. Copy the patterns into `%USERPROFILE%\.gf` (PowerShell):
+```powershell
+ git clone https://github.com/1ndianl33t/Gf-Patterns
+ New-Item -ItemType Directory -Force "$env:USERPROFILE\.gf"
+ Copy-Item .\Gf-Patterns\*.json "$env:USERPROFILE\.gf"
+```
+   Or from `cmd.exe`:
+```bat
+ git clone https://github.com/1ndianl33t/Gf-Patterns
+ mkdir "%USERPROFILE%\.gf"
+ copy Gf-Patterns\*.json "%USERPROFILE%\.gf"
+```
+
+3. Check that the patterns are found:
+```powershell
+ gf -list
+```
+
+`gf` runs the `grep` command under the hood, which Windows does not ship. Run `gf` from
+**Git Bash** (installed with Git for Windows), or use WSL and follow the Linux steps above.
+If `~/.config/gf` exists, gf reads patterns from there instead of `~/.gf`, so put the JSON
+files in that folder in that case.
+
 **Use example**
 ```bash
 
