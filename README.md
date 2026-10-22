@@ -58,6 +58,18 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 ```bash
  mv ~/Gf-Patterns/*.json ~/.gf
 ```
+If you only want a few pattern files instead of cloning the whole repository, download them from `raw.githubusercontent.com` (not from the `github.com/.../blob/...` page, which returns HTML):
+```bash
+ wget -P ~/.gf https://raw.githubusercontent.com/1ndianl33t/Gf-Patterns/master/ssrf.json
+```
+**Troubleshooting**
+
+If gf reports an error like this:
+```
+pattern file '/home/kali/.gf/debug_logic.json' is malformed: invalid character '<' looking for beginning of value
+```
+the file in `~/.gf` is a saved GitHub web page (HTML), not the JSON pattern. This happens when a file is downloaded from a `github.com/1ndianl33t/Gf-Patterns/blob/master/...` URL or saved from the browser. Check it with `head -c 100 ~/.gf/debug_logic.json`: if it starts with `<`, delete it and download it again with `git clone` or from the `raw.githubusercontent.com` URL shown above.
+
 **Use example**
 ```bash
 
